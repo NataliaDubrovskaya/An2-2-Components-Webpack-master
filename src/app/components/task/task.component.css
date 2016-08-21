@@ -1,0 +1,9 @@
+.task-header{
+	font-weight: bold;
+	background:	#D3D3D3;
+	opacity: 0.8;
+}
+
+.task-panel{
+	border: solid;
+}

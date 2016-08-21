@@ -1,0 +1,18 @@
+<todo-app-header>
+  {{title}}
+</todo-app-header>
+<task-list
+	[tasks]="tasks"
+	(onComplete)="completeTask($event)"	
+	(onDelete)="deleteTask($event)">
+</task-list>
+
+<div class="statistics-panel">
+	<p>Total: {{tasks.length}}</p>
+	<p>Done: {{countDoneTasks()}}</p>
+	<p>Undone: {{countUndoneTasks()}}</p>
+</div>
+
+<task-form
+	(onAddTask)="addNewTask($event)">
+</task-form>

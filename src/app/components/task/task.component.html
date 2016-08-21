@@ -1,0 +1,19 @@
+<!-- <p>
+  task works!
+</p> -->
+<div class="panel panel-default task-panel">
+	<div class="panel-heading task-header">Task</div>
+	<div class="panel-body">
+		<ul>
+			<li>Action: {{task.action}}</li>
+			<li>Priority: {{task.priority}}</li>
+			<li>Estimate Hours: {{task.estHours}}</li>
+			<li>Actual Hours: {{task.estHours}}</li>
+			<li>Done: {{task.done}}</li>
+		</ul>
+		<button class="btn btn-primary"
+		(click)="completeTask($event)">Done</button>
+		<button class="btn btn-danger btn-sm"
+		(click)="deleteTask($event)"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+	</div>
+</div>
